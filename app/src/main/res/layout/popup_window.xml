@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/teal_200"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/artistN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:hint="@string/actor"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/movieN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Movie" />
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:text="Poster" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addImageBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add "
+                android:layout_marginStart="280dp"
+                android:textAllCaps="false"
+
+                />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addItemBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OK"
+            android:layout_marginStart="135dp"
+
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
