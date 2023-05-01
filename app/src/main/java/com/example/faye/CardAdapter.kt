@@ -7,7 +7,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.faye.databinding.CardLlistBinding
 
-class CardAdapter(private val context: Context?) : RecyclerView.Adapter<CardAdapter.CardViewHolder>() {
+class CardAdapter(private val context: Context?) :
+    RecyclerView.Adapter<CardAdapter.CardViewHolder>() {
 
     // initialize the Data in the list
     val dataset = Datasource.cards
@@ -32,7 +33,6 @@ class CardAdapter(private val context: Context?) : RecyclerView.Adapter<CardAdap
         holder.binding.artistName.text = item.artistName
         holder.binding.movieName.text = item.movieName
         holder.binding.CardBackground.setImageResource(item.imageResourcedId)
-
 
 
     }
